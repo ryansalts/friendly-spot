@@ -2,8 +2,8 @@ backend:
   name: github
   repo: ryansalts/friendly-spot
   branch: main
-  app_id: PLACEHOLDER
-  base_url: https://PLACEHOLDER.workers.dev
+  app_id: Ov23liJGENxmjiUXJuAO
+  base_url: https://friendly-spot-oauth.ryansalts.workers.dev
 
 media_folder: "assets"
 public_folder: "assets"
