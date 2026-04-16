@@ -1,0 +1,137 @@
+backend:
+  name: github
+  repo: ryansalts/friendly-spot
+  branch: main
+  app_id: PLACEHOLDER
+  base_url: https://PLACEHOLDER.workers.dev
+
+media_folder: "assets"
+public_folder: "assets"
+
+collections:
+
+  - name: "promo"
+    label: "📣 Promo Banner"
+    files:
+      - label: "Promo Banner"
+        name: "promo"
+        file: "_data/promo.json"
+        fields:
+          - { label: "Banner Text", name: text, widget: string, hint: "Main promo message (HTML entities like &amp; are fine)" }
+          - { label: "Link Text", name: link_text, widget: string }
+          - { label: "Link URL", name: link_href, widget: string }
+
+  - name: "hero"
+    label: "🏠 Hero"
+    files:
+      - label: "Hero Section"
+        name: "hero"
+        file: "_data/hero.json"
+        fields:
+          - { label: "Eyebrow Text", name: eyebrow, widget: string }
+          - { label: "Headline Line 1", name: headline_line1, widget: string }
+          - { label: "Headline Line 2", name: headline_line2, widget: string }
+          - { label: "Headline Line 3", name: headline_line3, widget: string }
+          - { label: "Sub Text", name: sub, widget: string }
+          - { label: "Stat 1 Number", name: stat1_num, widget: string }
+          - { label: "Stat 1 Label", name: stat1_label, widget: string }
+          - { label: "Stat 2 Number", name: stat2_num, widget: string }
+          - { label: "Stat 2 Label", name: stat2_label, widget: string }
+          - { label: "Stat 3 Number", name: stat3_num, widget: string }
+          - { label: "Stat 3 Label", name: stat3_label, widget: string }
+          - { label: "Primary CTA Text", name: cta_primary_text, widget: string }
+          - { label: "Primary CTA Link", name: cta_primary_href, widget: string }
+          - { label: "Ghost CTA Text", name: cta_ghost_text, widget: string }
+          - { label: "Ghost CTA Link", name: cta_ghost_href, widget: string }
+
+  - name: "about"
+    label: "📖 About"
+    files:
+      - label: "About Section"
+        name: "about"
+        file: "_data/about.json"
+        fields:
+          - { label: "Eyebrow", name: eyebrow, widget: string }
+          - { label: "Heading", name: heading, widget: string }
+          - { label: "Body Text", name: body1, widget: text }
+          - { label: "Tagline", name: tagline, widget: string }
+          - label: "Feature Pills"
+            name: pills
+            widget: list
+            field: { label: "Pill", name: pill, widget: string }
+
+  - name: "hours"
+    label: "🕐 Hours"
+    files:
+      - label: "Hours"
+        name: "hours"
+        file: "_data/hours.json"
+        fields:
+          - { label: "Main Hours Text", name: main, widget: string, hint: "e.g. Every day: Noon – Midnight" }
+          - { label: "Kitchen Hours", name: kitchen, widget: string }
+          - { label: "FriendlyHour Badge", name: badge, widget: string }
+
+  - name: "contact"
+    label: "📞 Contact"
+    files:
+      - label: "Contact Info"
+        name: "contact"
+        file: "_data/contact.json"
+        fields:
+          - { label: "Phone (display)", name: phone, widget: string, hint: "e.g. (210) 224-BEER" }
+          - { label: "Phone (digits only)", name: phone_raw, widget: string, hint: "e.g. 2102242337" }
+          - { label: "Email", name: email, widget: string }
+          - { label: "Street Address", name: address_street, widget: string }
+          - { label: "City / State / Zip", name: address_city, widget: string }
+
+  - name: "social"
+    label: "🔗 Social & Links"
+    files:
+      - label: "Social Links"
+        name: "social"
+        file: "_data/social.json"
+        fields:
+          - { label: "Instagram URL", name: instagram, widget: string }
+          - { label: "Instagram Handle", name: instagram_handle, widget: string }
+          - { label: "Facebook URL", name: facebook, widget: string }
+          - { label: "Merch Store URL", name: merch, widget: string }
+          - { label: "Order Online URL", name: order_online, widget: string }
+
+  - name: "sports"
+    label: "🏈 Sports Section"
+    files:
+      - label: "Sports"
+        name: "sports"
+        file: "_data/sports.json"
+        fields:
+          - { label: "Eyebrow", name: eyebrow, widget: string }
+          - { label: "Heading", name: heading, widget: string }
+          - { label: "Subheading", name: sub, widget: string }
+          - label: "Sports List Items"
+            name: items
+            widget: list
+            field: { label: "Item", name: item, widget: string }
+
+  - name: "menu_food"
+    label: "🍔 Menu — Food"
+    files:
+      - label: "Food Menu"
+        name: "menu_food"
+        file: "_data/menu-food.json"
+        fields:
+          - label: "Categories"
+            name: categories
+            widget: list
+            fields:
+              - { label: "Category ID", name: id, widget: string }
+              - { label: "Heading", name: heading, widget: string }
+              - { label: "Note (top of category)", name: note, widget: string, required: false }
+              - { label: "Add-ons line", name: addons, widget: string, required: false }
+              - label: "Items"
+                name: items
+                widget: list
+                fields:
+                  - { label: "Name", name: name, widget: string }
+                  - { label: "Description", name: desc, widget: string, required: false }
+                  - { label: "Price", name: price, widget: string }
+                  - { label: "Vegetarian?", name: veg, widget: boolean, default: false }

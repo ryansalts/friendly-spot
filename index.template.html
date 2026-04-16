@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>The Friendly Spot Ice House — San Antonio, TX</title>
+  <meta name="description" content="Pet & Kid Friendly Ice House in Southtown San Antonio. 300+ brews, 76 taps, full kitchen noon to midnight, 7 days a week."/>
+  <meta name="author" content="The Friendly Spot"/>
+  <link rel="canonical" href="https://thefriendlyspot.com/"/>
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://thefriendlyspot.com/"/>
+  <meta property="og:site_name" content="The Friendly Spot"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:title" content="The Friendly Spot Ice House — San Antonio, TX"/>
+  <meta property="og:description" content="Southtown San Antonio's neighborhood ice house. 300+ brews, 76 taps, full kitchen noon to midnight. Kid &amp; dog friendly."/>
+  <meta property="og:image" content="https://thefriendlyspot.com/assets/friendly-frontyard.jpg"/>
+  <meta property="og:image:type" content="image/jpeg"/>
+  <meta property="og:image:width" content="1080"/>
+  <meta property="og:image:height" content="1080"/>
+  <meta property="og:image:alt" content="The Friendly Spot Ice House in Southtown San Antonio"/>
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@TheFriendlySpot"/>
+  <meta name="twitter:title" content="The Friendly Spot Ice House — San Antonio, TX"/>
+  <meta name="twitter:description" content="Southtown San Antonio's neighborhood ice house. 300+ brews, 76 taps, full kitchen noon to midnight. Kid &amp; dog friendly."/>
+  <meta name="twitter:image" content="https://thefriendlyspot.com/assets/friendly-frontyard.jpg"/>
+  <meta name="twitter:image:alt" content="The Friendly Spot Ice House in Southtown San Antonio"/>
+
+  <meta name="theme-color" content="#b4d2f0"/>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png"/>
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,400;0,600;0,700;1,400&family=Barlow:ital,wght@0,400;0,500;0,600;1,400&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+  <script src="main.js" defer></script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","@id":"https://thefriendlyspot.com","url":"https://thefriendlyspot.com","name":"The Friendly Spot","image":["assets/friendly-frontyard.jpg"],"address":{"@type":"PostalAddress","streetAddress":"943 S Alamo St","addressLocality":"San Antonio","addressRegion":"TX","postalCode":"78205","addressCountry":"USA"},"geo":{"@type":"GeoCoordinates","latitude":"29.414648","longitude":"-98.490762"},"telephone":"+1{{PHONE_RAW}}","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"12:00","closes":"00:00"}]}</script>
+</head>
+<body>
+
+<div class="promo-banner">
+  <span>{{PROMO_TEXT}}</span>
+  <a href="{{PROMO_LINK_HREF}}" target="_blank" rel="noopener">{{PROMO_LINK_TEXT}}</a>
+</div>
+
+<header class="site-header" id="site-header">
+  <div class="header-inner">
+    <a href="/" class="logo-link" aria-label="The Friendly Spot Home">
+      <img src="assets/friendly-spot-logo.webp" alt="The Friendly Spot" class="logo-img"/>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Eats</a></li>
+        <li><a href="#vibes">Vibes</a></li>
+        <li><a href="#sports">Sports</a></li>
+        <li><a href="#contact">Find Us</a></li>
+        <li><a href="{{ORDER_ONLINE_URL}}" class="nav-cta">Order Online</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-drawer" aria-hidden="true">
+  <button class="drawer-close" aria-label="Close navigation menu">✕</button>
+  <nav aria-label="Mobile navigation">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#menu">Eats</a></li>
+      <li><a href="#vibes">Vibes</a></li>
+      <li><a href="#sports">Sports</a></li>
+      <li><a href="#contact">Find Us</a></li>
+      <li><a href="{{MERCH_URL}}" target="_blank" rel="noopener">Merch</a></li>
+      <li><a href="{{ORDER_ONLINE_URL}}" class="drawer-cta">Order Online</a></li>
+    </ul>
+  </nav>
+  <div class="drawer-contact">
+    <p>{{ADDRESS_STREET}}<br/>{{ADDRESS_CITY}}</p>
+    <a href="tel:{{PHONE_RAW}}">{{PHONE}}</a>
+  </div>
+</div>
+<div class="drawer-overlay"></div>
+
+<section class="hero" id="hero">
+  <div class="hero-bg">
+    <img src="assets/friendly-frontyard.jpg" alt="The Friendly Spot at night, packed with people" class="hero-photo"/>
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">{{HERO_EYEBROW}}</p>
+    <h1 class="hero-headline">{{HERO_LINE1}}<br/>{{HERO_LINE2}}<br/>{{HERO_LINE3}}</h1>
+    <p class="hero-sub">{{HERO_SUB}}</p>
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num">{{STAT1_NUM}}</span><span class="stat-label">{{STAT1_LABEL}}</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num">{{STAT2_NUM}}</span><span class="stat-label">{{STAT2_LABEL}}</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num">{{STAT3_NUM}}</span><span class="stat-label">{{STAT3_LABEL}}</span></div>
+    </div>
+    <div class="hero-actions">
+      <a href="{{HERO_CTA_PRIMARY_HREF}}" class="btn-primary">{{HERO_CTA_PRIMARY_TEXT}}</a>
+      <a href="{{HERO_CTA_GHOST_HREF}}" class="btn-ghost">{{HERO_CTA_GHOST_TEXT}}</a>
+    </div>
+  </div>
+  <a href="#about" class="hero-scroll" aria-label="Scroll down">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+  </a>
+</section>
+
+<section class="icehouse-explainer" id="about">
+  <div class="explainer-inner">
+    <div class="explainer-text reveal">
+      <span class="section-eyebrow">{{ABOUT_EYEBROW}}</span>
+      <h2>{{ABOUT_HEADING}}</h2>
+      <p class="explainer-body">{{ABOUT_BODY1}}</p>
+      <p class="explainer-tagline">{{ABOUT_TAGLINE}}</p>
+      <div class="feature-pills">
+        {{ABOUT_PILLS}}
+      </div>
+    </div>
+    <div class="explainer-photo reveal reveal-delay">
+      <img src="assets/friendly-patrons.jpg" alt="Guests enjoying the patio at The Friendly Spot"/>
+    </div>
+  </div>
+</section>
+
+<div class="photo-strip" aria-hidden="true">
+  <div class="strip-item"><img src="assets/friendly-runners.jpg" alt="Friendly Spot entrance daytime"/></div>
+  <div class="strip-item"><img src="assets/friendly-margs.jpg" alt="Margaritas at the bar"/></div>
+  <div class="strip-item"><img src="assets/friendly-burger.jpg" alt="Friends on the patio"/></div>
+  <div class="strip-item"><img src="assets/friendly-beard.jpg" alt="A regular at The Friendly Spot"/></div>
+  <div class="strip-item"><img src="assets/friendly-nachos.jpg" alt="Table with drinks"/></div>
+</div>
+
+<section class="friendly-hour">
+  <div class="fhour-inner reveal">
+    <div class="fhour-badge">{{HOURS_BADGE}}</div>
+    <h2>#FriendlyHour</h2>
+    <p>Our version of happy hour. <strong>#FriendlySteals</strong> &amp; <strong>#FriendlyDrafts</strong> — just for friends.</p>
+    <p class="fhour-follow">Follow <a href="{{INSTAGRAM_URL}}" target="_blank" rel="noopener">{{INSTAGRAM_HANDLE}}</a> for daily specials</p>
+  </div>
+</section>
+
+<section class="menu-section" id="menu">
+  <div class="menu-heading reveal">
+    <span class="section-eyebrow">Full Kitchen</span>
+    <h2 class="menu-title">Friendly Eats</h2>
+    <p class="menu-sub">{{HOURS_MAIN}} · 7 Days a Week</p>
+  </div>
+
+  <div class="menu-grid">
+    {{MENU_CATEGORIES}}
+  </div>
+
+  <p class="veg-key reveal"><sup>V</sup> Vegetarian Friendly</p>
+  <div class="menu-cta reveal">
+    <a href="{{ORDER_ONLINE_URL}}" class="btn-primary btn-lg">Order Online for Pickup →</a>
+  </div>
+</section>
+
+<section class="vibes-section" id="vibes">
+  <div class="vibes-header reveal">
+    <h2>The Vibe</h2>
+    <p>Everyone's welcome. Every day.</p>
+  </div>
+  <div class="vibes-grid">
+    <div class="vg-cell vg-tall reveal"><img src="assets/friendly-barn.jpg" alt="Barn bar interior with sports screens" loading="lazy"/></div>
+    <div class="vg-cell reveal reveal-delay"><img src="assets/friendly-beard1.jpg" alt="Friends with cold beers out front" loading="lazy"/></div>
+    <div class="vg-cell reveal reveal-delay2"><img src="assets/friendly-family.jpg" alt="A family enjoying the patio" loading="lazy"/></div>
+    <div class="vg-cell reveal"><img src="assets/friendly-biking-crew.webp" alt="Biking crew stopping at the ice house" loading="lazy"/></div>
+    <div class="vg-cell vg-wide reveal"><img src="assets/friendly-backyard.jpg" alt="Backyard patio watching sports" loading="lazy"/></div>
+    <div class="vg-cell reveal"><img src="assets/friendly-slide1.jpg" alt="The colorful playground slide" loading="lazy"/></div>
+    <div class="vg-cell reveal reveal-delay"><img src="assets/friendly-wemby.jpg" alt="Spurs fans with Wemby cutout" loading="lazy"/></div>
+    <div class="vg-cell reveal reveal-delay2"><img src="assets/friendly-wemby1.jpg" alt="Wemby fan group on the patio" loading="lazy"/></div>
+    <div class="vg-cell reveal"><img src="assets/friendly-staff1.jpg" alt="Staff holding drinks, ready to serve" loading="lazy"/></div>
+    <div class="vg-cell reveal reveal-delay"><img src="assets/friendly-friends.jpg" alt="Friends hanging out at The Friendly Spot" loading="lazy"/></div>
+    <div class="vg-cell reveal reveal-delay2"><img src="assets/friendly-staff.jpg" alt="Friendly Spot staff behind the bar" loading="lazy"/></div>
+    <div class="vg-cell reveal"><img src="assets/friendly-taps.jpg" alt="76 taps at the bar" loading="lazy"/></div>
+    <div class="vg-cell reveal reveal-delay"><img src="assets/friendly-dog.jpg" alt="Friend with friendly pup" loading="lazy"/></div>
+    <div class="vg-cell reveal reveal-delay2"><img src="assets/friendly-w.jpg" alt="Patron at the beer coolers" loading="lazy"/></div>
+  </div>
+</section>
+
+<section class="sports-section" id="sports">
+  <div class="sports-bg">
+    <img src="assets/friendly-tron.jpg" alt="The FriendlyTron LED screen with fans watching Spurs" class="sports-bg-img" loading="lazy"/>
+    <div class="sports-overlay"></div>
+  </div>
+  <div class="sports-content reveal">
+    <span class="section-eyebrow section-eyebrow--light">{{SPORTS_EYEBROW}}</span>
+    <h2>{{SPORTS_HEADING}}</h2>
+    <p class="sports-sub">{{SPORTS_SUB}}</p>
+    <ul class="sports-list">
+      {{SPORTS_ITEMS}}
+    </ul>
+  </div>
+</section>
+
+<section class="contact-section" id="contact">
+  <div class="contact-grid">
+    <div class="contact-info reveal">
+      <span class="section-eyebrow">Come See Us</span>
+      <h2>Find Us</h2>
+      <address>
+        <p>{{ADDRESS_STREET}}</p>
+        <p>{{ADDRESS_CITY}}</p>
+      </address>
+      <a href="tel:{{PHONE_RAW}}" class="contact-phone">{{PHONE}}</a>
+      <div class="hours-block">
+        <h3>Hours</h3>
+        <p>{{HOURS_MAIN}}</p>
+        <p>Kitchen: <strong>{{HOURS_KITCHEN}}</strong></p>
+      </div>
+      <div class="social-row">
+        <a href="{{INSTAGRAM_URL}}" target="_blank" rel="noopener" class="social-btn">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          Instagram
+        </a>
+        <a href="{{FACEBOOK_URL}}" target="_blank" rel="noopener" class="social-btn">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          Facebook
+        </a>
+      </div>
+    </div>
+
+    <div class="contact-map reveal reveal-delay">
+      <iframe
+        title="The Friendly Spot map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3470.848!2d-98.490762!3d29.414648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865c5f3a5cdc7c7b%3A0x67c4d51b5fe4b4e2!2s943%20S%20Alamo%20St%2C%20San%20Antonio%2C%20TX%2078205!5e0!3m2!1sen!2sus!4v1681234567890!5m2!1sen!2sus"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+    <div class="contact-form-wrap reveal">
+      <h3>Drop Us a Line</h3>
+      <a href="mailto:{{EMAIL}}" class="btn-primary">Drop Us a Line</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="assets/friendly-spot-logo.webp" alt="The Friendly Spot"/>
+      <p>{{ADDRESS_STREET}} · {{ADDRESS_CITY}}</p>
+      <a href="tel:{{PHONE_RAW}}">{{PHONE}}</a>
+    </div>
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <ul>
+        <li><a href="#menu">Friendly Eats</a></li>
+        <li><a href="{{ORDER_ONLINE_URL}}">Order Online</a></li>
+        <li><a href="{{MERCH_URL}}" target="_blank" rel="noopener">Merch</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="footer-employment">
+    <div class="footer-employment-inner">
+      <div class="employment-text">
+        <h4>Now Hiring — Join the Team</h4>
+        <p>Download, fill out, and drop off at The Friendly Spot or email to <a href="mailto:{{EMAIL}}">{{EMAIL}}</a></p>
+      </div>
+      <a href="assets/friendly-employment-application.pdf" download class="btn-employment">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Download Application
+      </a>
+    </div>
+    </div>
+</footer>
+
+</body>
+</html>
