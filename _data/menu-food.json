@@ -8,43 +8,46 @@
         {
           "name": "Chips &amp; House Salsa",
           "desc": "",
-          "price": "$8.00",
+          "price": "$8",
           "veg": true
         },
         {
           "name": "Chips &amp; White Queso",
           "desc": "",
-          "price": "$9.00",
+          "price": "$9",
           "veg": true
         },
         {
           "name": "Chips &amp; House Guac",
           "desc": "",
-          "price": "$9.00",
+          "price": "$9",
           "veg": true
         },
         {
-          "name": "Hand Cut Fries",
-          "desc": "Add Parmesan +$1 · White Queso +$1.50",
-          "price": "$6.00",
-          "veg": true
+          "veg": true,
+          "name": "Chips & Hummus",
+          "price": "$9"
         },
         {
-          "name": "Boneless Wings",
-          "desc": "Celery, carrots &amp; ranch. Sauces: Spicy BBQ, BBQ, Asian Zing, Mango Habanero, Buffalo, Lemon Pepper, or Bare",
-          "price": "$12.00",
-          "veg": false
+          "veg": true,
+          "name": "Chips & Artichoke Dip",
+          "price": "$9"
+        },
+        {
+          "veg": true,
+          "name": "Veggies & Ranch",
+          "price": "$6"
         },
         {
           "name": "Friendly Fried Pickles",
           "desc": "With house ranch",
-          "price": "$8.00",
+          "price": "$8",
           "veg": true
         },
         {
           "name": "Fried Jalapeño Bites",
-          "desc": "With white queso",
-          "price": "$8.00",
+          "desc": "With house ranch",
+          "price": "$8",
           "veg": true
         },
         {
@@ -52,6 +55,27 @@
           "desc": "Fried Pickles &amp; Jalapeño Bites with ranch &amp; white queso",
           "price": "$13.00",
           "veg": true
+        },
+        {
+          "name": "Hand Cut Fries",
+          "desc": "Add Parmesan +$1 · White Queso +$2",
+          "price": "$6",
+          "veg": true
+        },
+        {
+          "veg": true,
+          "name": "Onion Rings",
+          "price": "$8"
+        },
+        {
+          "veg": true,
+          "name": "Tater Tots",
+          "price": "$8"
+        },
+        {
+          "veg": true,
+          "name": "Fried Mushrooms",
+          "price": "$8"
         }
       ],
       "addons": ""
@@ -64,29 +88,29 @@
         {
           "name": "Bean &amp; Cheese",
           "desc": "Black beans, shredded cheese",
-          "price": "$8.75",
+          "price": "$10.00",
           "veg": true
         },
         {
           "name": "Steak Nachos",
           "desc": "Black beans, queso, house pico",
-          "price": "$11.00",
+          "price": "$12",
           "veg": false
         },
         {
           "name": "Chicken Ranch",
           "desc": "Black beans, shredded cheese, jalapeños, house ranch",
-          "price": "$10.00",
+          "price": "$11",
           "veg": false
         },
         {
           "name": "Street Corn",
           "desc": "Black beans, corn, peppers, queso fresco, house pico",
-          "price": "$9.25",
+          "price": "$10",
           "veg": true
         }
       ],
-      "addons": "Add-ons: House Salsa +$1 · Guac +$1 · Jalapeños +$0.50 · Sour Cream +$0.50 · House Pico +$0.75"
+      "addons": "Add-ons: House Salsa +$1 · Guac +$2 · Jalapeños +$1 · Sour Cream +$1 · House Pico +$1"
     },
     {
       "id": "tacos",
@@ -96,13 +120,13 @@
         {
           "name": "Mahi Mahi Fish Tacos",
           "desc": "2 tacos. Corn tortillas, house slaw, house pico, queso fresco &amp; cilantro lime salsa",
-          "price": "$8.50",
+          "price": "$12",
           "veg": false
         },
         {
           "name": "Roasted Chickpea &amp; Cauliflower",
           "desc": "2 tacos. Corn tortillas, house slaw, house pico &amp; cilantro lime salsa",
-          "price": "$7.00",
+          "price": "$10",
           "veg": true
         }
       ],
@@ -110,25 +134,40 @@
     },
     {
       "id": "burgers",
-      "heading": "Burgers &amp; Sandwiches",
-      "note": "Customize: Fries +$2.50 · Cheese +$0.50 · Bacon +$1 · Guac +$1 · Pico +$0.75",
+      "heading": "Friendly Burgers &amp; Sandwiches",
+      "note": "Customize: Fries +$4 · Cheese(Cheddar) +$1 · Bacon +$1 · Guac +$1 · Pico +$1",
       "items": [
         {
-          "name": "Friendly Burger",
+          "name": "Plain Single",
           "desc": "",
-          "price": "$8.00",
+          "price": "$10",
           "veg": false
+        },
+        {
+          "veg": false,
+          "name": "Single Cheeseburger",
+          "price": "$11"
+        },
+        {
+          "veg": false,
+          "name": "Plain Double",
+          "price": "$13"
+        },
+        {
+          "veg": false,
+          "name": "Double Cheeseburger",
+          "price": "$15"
         },
         {
           "name": "Friendly \"Veggie\" Burger",
           "desc": "",
-          "price": "$10.00",
+          "price": "$11",
           "veg": true
         },
         {
           "name": "Friendly Chicken'wich",
           "desc": "",
-          "price": "$8.00",
+          "price": "$10",
           "veg": false
         }
       ],
@@ -142,51 +181,57 @@
         {
           "name": "Chicken on a Stick",
           "desc": "With a jalapeño",
-          "price": "$5.00",
+          "price": "$8",
           "veg": false
         },
         {
           "name": "Loaded Queso",
           "desc": "Tortilla chips, queso, house guac, house pico",
-          "price": "$10.00",
+          "price": "$9.50",
           "veg": false
         },
         {
           "name": "Loaded Fries",
           "desc": "Hand-cut fries, chili, cheddar cheese, jalapeños, ranch",
-          "price": "$8.00",
+          "price": "$10",
           "veg": false
+        },
+        {
+          "veg": false,
+          "name": "Boneless Wings",
+          "price": "$12",
+          "desc": "Buffalo · Bare · Bar-B-Q · Spicy BBQ · Asian Zing · Lemon Pepper · Garlic Parmesan "
         }
       ],
       "addons": ""
     },
     {
       "id": "kids",
-      "heading": "Kids Menu",
+      "heading": "Friendly Kids Menu",
       "note": "All served with fries or carrot sticks",
       "items": [
         {
           "name": "Mini Friendly Nachos",
           "desc": "",
-          "price": "$6.00",
+          "price": "$6.50",
           "veg": true
         },
         {
           "name": "Grilled Cheese",
           "desc": "",
-          "price": "$6.00",
+          "price": "$6.50",
           "veg": true
         },
         {
           "name": "Kraft Mac &amp; Cheese",
           "desc": "",
-          "price": "$6.00",
+          "price": "$6.50",
           "veg": true
         },
         {
           "name": "Chicken Nuggets",
           "desc": "",
-          "price": "$6.00",
+          "price": "$6.50",
           "veg": false
         }
       ],
@@ -200,13 +245,13 @@
         {
           "name": "Bomb Pops",
           "desc": "",
-          "price": "$2.00",
+          "price": "$3",
           "veg": false
         },
         {
           "name": "Push Ups",
           "desc": "",
-          "price": "$2.50",
+          "price": "$3",
           "veg": false
         },
         {
@@ -218,7 +263,7 @@
         {
           "name": "Ice Cream Cone",
           "desc": "",
-          "price": "$3.50",
+          "price": "$3",
           "veg": false
         }
       ],
