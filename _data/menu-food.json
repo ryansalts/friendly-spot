@@ -53,7 +53,7 @@
         {
           "name": "Friendly Mix-up",
           "desc": "Fried Pickles &amp; Jalapeño Bites with ranch &amp; white queso",
-          "price": "$13.00",
+          "price": "$13",
           "veg": true
         },
         {
@@ -88,7 +88,7 @@
         {
           "name": "Bean &amp; Cheese",
           "desc": "Black beans, shredded cheese",
-          "price": "$10.00",
+          "price": "$10",
           "veg": true
         },
         {
@@ -257,7 +257,7 @@
         {
           "name": "Ice Cream Sandwich",
           "desc": "",
-          "price": "$3.00",
+          "price": "$3",
           "veg": false
         },
         {
